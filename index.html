@@ -50,14 +50,14 @@
   color: gold; 
   font-size: 60px; 
   font-family: 'Playfair Display', serif;
-  animation: fadeIn 1.2s ease forwards;
-}
+  letter-spacing: 4px;
+  }
  h2 { 
   color: #c9a84c; 
   font-size: 30px; 
   font-family: 'Raleway', sans-serif;
   letter-spacing: 2px;
-  animation: fadeIn 1.5s ease forwards;
+  
 }
   p { color: #9b9b9b; font-size: 23px; }
   #cta { text-align: center; }
@@ -134,9 +134,7 @@
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
-#cta {
-  animation: fadeIn 1.8s ease forwards;
-}
+
 </style>
 
 <body>
@@ -198,6 +196,17 @@
   document.getElementById('btn-contacto').addEventListener('click', function() {
     window.open('https://wa.me/5213929410226?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20Tequila%203030', '_blank');
   });
+  const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.animation = 'fadeIn 1.2s ease forwards';
+    }
+  });
+});
+document.querySelectorAll('h1, h2, .producto, #cta').forEach(el => {
+  el.style.opacity = '0';
+  observer.observe(el);
+});
 </script>
 
 </body>
