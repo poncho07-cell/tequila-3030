@@ -91,9 +91,46 @@
     font-size: 18px;
   }
 }
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #0d0d0d;
+  border-bottom: 1px solid gold;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#logo {
+  color: gold;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+#nav-links a {
+  color: #c9a84c;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 16px;
+}
+
+#nav-links a:hover {
+  color: gold;
+}
 </style>
 
 <body>
+  <nav id="navbar">
+  <div id="logo">Tequila 3030</div>
+  <div id="nav-links">
+    <a href="#productos">Productos</a>
+    <a href="#historia">Historia</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
  <img id="hero" src="https://as2.ftcdn.net/v2/jpg/04/19/47/21/1000_F_419472165_1TmvMPmUTYxdzkcNTay1QL32dmvUzwkq.jpg" ><h1>Tequila 3030</h1>         <h2>Destileria Artesanal de Arandas Jalisco</h2> <p>Producimos Tequila 100% de Agave Azul desde 1976, de Arandas Jalisco para el mundo</p> <h2>Nuestra Historia</h2> <p>Nuestro Tequila y nuestro nombre 3030 hallaron su fortaleza en el famoso Rifle 3030 que en América se dice que conquistó el oeste, en México fue el propulsor de la Revolución Mexicana, símbolo de Grandeza y Conquista: Ícono de la lucha del Pueblo Mexicano. </p>
 <div id= "cta"> <p>Accede al 10% de descuento en tu Primera Compra</p> <button id="btn-contacto">Comprar Ahora</button></div> 
 <div id="productos">
