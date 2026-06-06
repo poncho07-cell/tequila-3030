@@ -196,6 +196,28 @@
   font-size: 16px;
   cursor: pointer;
 }
+.seccion-flex {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.seccion-texto {
+  flex: 1;
+}
+
+.seccion-imagen img {
+  width: 100%;
+  border-radius: 12px;
+  flex: 1;
+}
+
+.seccion-imagen {
+  flex: 1;
+}
 </style>
 
 <body>
@@ -218,12 +240,16 @@ Forjado con agave azul y fuego lento.
 Tequila 3030 es para quienes saben lo que conquistan.</p>
 
 <div id="historia">
-  <h2>Nuestra Historia</h2>
-  <p>El rifle 30-30 conquistó el Oeste y fue el ícono 
-de la Revolución Mexicana. Nuestro tequila lleva 
-ese mismo espíritu — la fuerza del pueblo mexicano 
-destilada gota a gota desde Capilla de Guadalupe 
-hasta cada rincón del mundo.</p>
+  <div class="seccion-flex">
+    <div class="seccion-texto">
+      <h2>Nuestra Historia</h2>
+      <p>El rifle 30-30 conquistó el Oeste y fue el ícono de la Revolución Mexicana. Nuestro tequila lleva ese mismo espíritu — la fuerza del pueblo mexicano destilada gota a gota desde Capilla de Guadalupe hasta cada rincón del mundo.</p>
+    </div>
+    <div class="seccion-imagen">
+      <img src="https://images.unsplash.com/photo-1516559828984-fb3b99548b21?w=600" alt="Agave">
+    </div>
+  </div>
+</div>
 </div>
 
 <div id="cta">
