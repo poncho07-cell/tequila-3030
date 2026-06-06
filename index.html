@@ -218,6 +218,10 @@
 .seccion-imagen {
   flex: 1;
 }
+.seccion-invertida {
+  flex-direction: row-reverse;
+}
+
 </style>
 
 <body>
@@ -257,24 +261,26 @@ Tequila 3030 es para quienes saben lo que conquistan.</p>
   <button id="btn-contacto">Quiero Unirme</button>
 </div>
 <div id="donde-comprar">
-  <h2>Encuéntranos en USA</h2>
-  <p>Disponible para envío en todo Estados Unidos.</p>
-
-  <div class="distribuidor">
-    <h3>Sip Tequila</h3>
-    <p>La mejor selección de tequilas premium en línea.</p>
-    <a href="https://siptequila.com/products/30-30-reposado-tequila" target="_blank">
-      Comprar Reposado
-    </a>
+  <div class="seccion-flex seccion-invertida">
+    <div class="seccion-imagen">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.cKsOzg7rEqY7kLkcAiTfkwHaHm?cb=thfc1falcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Donde comprar">
+    </div>
+    <div class="seccion-texto">
+      <h2>Encuéntranos en USA</h2>
+      <p>Disponible para envío en todo Estados Unidos.</p>
+      <div class="distribuidor">
+        <h3>Sip Tequila</h3>
+        <p>La mejor selección de tequilas premium en línea.</p>
+        <a href="https://siptequila.com/products/30-30-reposado-tequila" target="_blank">Comprar Reposado</a>
+      </div>
+      <div class="distribuidor">
+        <h3>Mara Imports</h3>
+        <p>Distribución especializada de tequilas mexicanos en USA.</p>
+        <a href="https://maraimports.com" target="_blank">Comprar en Mara</a>
+      </div>
+    </div>
   </div>
-
-  <div class="distribuidor">
-    <h3>Mara Imports</h3>
-    <p>Distribución especializada de tequilas mexicanos en USA.</p>
-    <a href="https://maraimports.com/estados-unidos/product/30-30-reposado/" target="_blank">
-      Comprar en Mara
-    </a>
-  </div>
+</div>
 </div>
 <div id="productos">
   <h2>Nuestros Productos</h2>
